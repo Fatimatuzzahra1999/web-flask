@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='gaya.css')}}">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>List Data Mahasiswa</h1>
+      <ul>
+        <li><a href="{{ url_for('home')}}">Home</a></li>
+        <li><a href="{{ url_for('tambahdata')}}">Tambah Data</a></li>
+        <li><a href="{{ url_for('listdata')}}" class="active">List Data</a></li>
+        <li><a href="{{ url_for('loginmhs')}}">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <table class="styled-table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Tgl Lahir</th>
+                <th>Prodi</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>fatimatuzzahra</td>
+                <td>204855007</td>
+                <td>1999-08-30</td>
+                <td>TI 5A</td>
+                <td>fatimatuzzahra@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hilda guspiarni</td>
+                <td>204855708</td>
+                <td>1995-08-25</td>
+                <td>TI 5A</td>
+                <td>Hidaguspiarni@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Armida Soprianti</td>
+                <td>204855009</td>
+                <td>2004-06-06</td>
+                <td>TI 5A</td>
+                <td>armida@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Rido septiadi Ramadan</td>
+                <td>204855887</td>
+                <td>1999-08-2</td>
+                <td>TI 5A</td>
+                <td>ridoseptiadi@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Rosita Hidayanti</td>
+                <td>204855007</td>
+                <td>2000-07-13</td>
+                <td>TI 5A</td>
+                <td>Rositahidayanti@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Nuzlil Kuranil</td>
+                <td>204855030</td>
+                <td>1998-11-07</td>
+                <td>TI 5A</td>
+                <td>nuzlil@gmail.com</td> 
+            </tr>
+
+        </tbody>
+    </table>
+      
+    </div>
+  </body>
+</html>

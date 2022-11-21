@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='gaya.css')}}">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1> Welcome TO MY Website!</h1>
+      <h2>Dibuat Oleh <span>Fatimatuz Zahra</span></h2>
+      <ul>
+        <li><a href="{{ url_for('home')}}" class="active">Home</a></li>
+        <li><a href="{{ url_for('tambahdata')}}">Tambah Data</a></li>
+        <li><a href="{{ url_for('listdata')}}">List Data</a></li>
+        <li><a href="{{ url_for('loginmhs')}}">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <img src="{{url_for('static', filename='IMG_2808.jpg')}}" width="150px">
+      <h1>Hai Guyss Gimana kabarnya?????,,, Saya fatimatuzzahra ,Terimakasih telah mengunjungi website Saya</h1>
+      <p> Website ini di buat untuk memenuhi tugas mata kuliah Pemrograman dari dosen Harmain,S.Kom.
+      </p>
+    </div>
+  </body>
+</html>
